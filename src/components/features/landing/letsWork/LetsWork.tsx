@@ -46,7 +46,7 @@ const LetsWork = () => {
             fontWeight="600"
             fontSize={isTabletOrMobile ? '85' : '164'}
           >
-            Let’s
+            Let’s be
           </Text>
           <ColoredText color="linear-gradient(90deg, #00D2FF 0%, #3A7BD5 100%)">
             Creative.
@@ -61,7 +61,7 @@ const LetsWork = () => {
             fontWeight="600"
             fontSize={isTabletOrMobile ? '85' : '164'}
           >
-            Let’s
+            Let’s be
           </Text>
           <ColoredText color="linear-gradient(90deg, #00D2FF 0%, #3A7BD5 100%)">
             Creative.

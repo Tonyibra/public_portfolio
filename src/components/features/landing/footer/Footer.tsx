@@ -33,7 +33,7 @@ const Footer = () => {
         <FooterSection>
           <TextContainer>
             <Text type="h6" fontSize="18">
-              Address: Lebanon,Beirut
+              Address: Lebanon, Beirut
             </Text>
           </TextContainer>
           <Link href="tel:+96176940499">
