@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Image } from './WorkBox.styles';
 import Row from '@/components/atoms/row/Row';
 import Text from '@/components/atoms/text/Text';
-import Link from 'next/link';
 import { useMediaQuery } from 'react-responsive';
 
 interface IProps {
@@ -27,7 +26,7 @@ const WorkBox: React.FC<IProps> = ({ image, link, projectName, type }) => {
             {type} / {projectName}
           </>
         </Text>
-        <Link href={`https:${link}`} target="_blank">
+        <a href={`https:${link}`} target="_blank">
           <Text
             isLink
             color="#fff"
@@ -37,7 +36,7 @@ const WorkBox: React.FC<IProps> = ({ image, link, projectName, type }) => {
           >
             View Link
           </Text>
-        </Link>
+        </a>
       </Row>
       <Image alt={projectName} src={image} />
     </Box>
