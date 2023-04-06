@@ -19,7 +19,7 @@ const LetsWork = () => {
           fontWeight="600"
           fontSize={isTabletOrMobile ? '85' : '164'}
         >
-          Let's
+          Let&apos;s
         </Text>
         <ColoredText color="linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%)">
           Work

@@ -39,7 +39,7 @@ const WorkBox: React.FC<IProps> = ({ image, link, projectName, type }) => {
           </Text>
         </Link>
       </Row>
-      <Image src={image} />
+      <Image alt={projectName} src={image} />
     </Box>
   );
 };

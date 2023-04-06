@@ -10,7 +10,7 @@ const MarqueeSection = () => {
       {EMPTY_LIST.map((index) => (
         <MarqueeItem key={index.toString()}>
           <Text type="h6" fontSize="50" fontWeight={'500'}>
-            Let's build your project
+            Let&apos;s build your project
           </Text>
           <MarqueeDecorator>
             <svg

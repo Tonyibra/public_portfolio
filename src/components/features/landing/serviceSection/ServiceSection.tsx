@@ -26,8 +26,8 @@ const ServiceSection = () => {
             fontWeight="500"
             fontSize={isTabletOrMobile ? '40' : '62'}
           >
-            It's not about what we make, it's about how satisfied you are with
-            our service
+            It&apos;s not about what we make, it&apos;s about how satisfied you
+            are with our service
           </Text>
         </TitleBox>
       </Container>

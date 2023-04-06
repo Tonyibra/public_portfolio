@@ -21,7 +21,7 @@ const Footer = () => {
       <FooterContainer id="Contact">
         <FooterSection>
           <Text type="h1" fontSize="50" fontWeight="500">
-            Would you like to work with me? Let's! work
+            Would you like to work with me? Let&apos;s! work
           </Text>
           <Text type="h1" fontSize="50" fontWeight="500">
             together
@@ -53,8 +53,8 @@ const Footer = () => {
         </FooterSection>
         <FooterSection>
           {FOOTER_DATA.map((item) => (
-            <Link href={item.link} target="_blank">
-              <TextContainer key={item.id.toString()}>
+            <Link key={item.id.toString()} href={item.link} target="_blank">
+              <TextContainer>
                 <Text isLink textAlign="center" type="h6" fontSize="18">
                   {item.title}
                 </Text>

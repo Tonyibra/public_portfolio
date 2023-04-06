@@ -49,8 +49,8 @@ const TopNav = () => {
               <ListRow>
                 <ItemRow>
                   {NAV_DATA.map(({ id, title }) => (
-                    <Link spy smooth delay={250} to={title}>
-                      <Text isLink key={id.toString()} type="li">
+                    <Link key={id.toString()} spy smooth delay={250} to={title}>
+                      <Text isLink type="li">
                         {title}
                       </Text>
                     </Link>
