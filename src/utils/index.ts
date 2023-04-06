@@ -1,0 +1,1 @@
+export const smallScreenWidth = 1224
