@@ -26,7 +26,7 @@ const WorkBox: React.FC<IProps> = ({ image, link, projectName, type }) => {
             {type} / {projectName}
           </>
         </Text>
-        <a href={`https:${link}`} target="_blank">
+        <a href={`https://${link}`} target="_blank">
           <Text
             isLink
             color="#fff"
