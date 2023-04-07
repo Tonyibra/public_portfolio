@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Section, StackContainer } from './SingleWork.styles';
 import Text from '../text/Text';
-import Row from '../row/Row';
 import Link from 'next/link';
+import { useMediaQuery } from 'react-responsive';
 
 interface IProps {
   name: string;
@@ -11,10 +11,16 @@ interface IProps {
 }
 
 const SingleWork: React.FC<IProps> = ({ link, name, stack }) => {
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+
   return (
     <Box>
       <Section>
-        <Text type="h1" fontWeight="bold">
+        <Text
+          fontSize={isTabletOrMobile ? '10' : '18'}
+          type="h1"
+          fontWeight="bold"
+        >
           {name}
         </Text>
       </Section>
@@ -29,6 +35,7 @@ const SingleWork: React.FC<IProps> = ({ link, name, stack }) => {
             fontWeight="bold"
             isLink
             fontStyle="italic"
+            fontSize={isTabletOrMobile ? '12' : '18'}
           >
             View Link
           </Text>

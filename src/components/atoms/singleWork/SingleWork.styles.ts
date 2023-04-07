@@ -22,6 +22,9 @@ export const StackContainer = styled.p`
   text-align: center;
   color: white;
   margin: 0;
+  @media (max-width: 768px) {
+    font-weight: 300;
+  }
 `;
 
 export const Section = styled.div`

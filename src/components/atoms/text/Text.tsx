@@ -1,6 +1,5 @@
 import { smallScreenWidth } from '@/utils';
 import React from 'react';
-import { useMediaQuery } from 'react-responsive';
 
 interface IProps {
   children: string | JSX.Element | JSX.Element[];

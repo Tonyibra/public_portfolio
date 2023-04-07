@@ -5,11 +5,19 @@ import Text from '@/components/atoms/text/Text';
 import Col from '@/components/atoms/col/Col';
 import SingleWork from '@/components/atoms/singleWork/SingleWork';
 import { WORKS } from '@/data/works';
+import { useMediaQuery } from 'react-responsive';
 
 const WorkSections = () => {
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+
   return (
     <Container>
-      <Text type="h1" color="white" fontSize="62" fontWeight="500">
+      <Text
+        type="h1"
+        color="white"
+        fontSize={isTabletOrMobile ? '40' : '62'}
+        fontWeight="500"
+      >
         A list of my projects.
       </Text>
       <ListHeader>
