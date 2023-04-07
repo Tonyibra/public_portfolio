@@ -5,6 +5,7 @@ import WorkBox from '@/components/molecules/numberedBox/workBox/WorkBox';
 import WorkPc from '@/assets/images/work_pc.jpg';
 import WorkLebEssentials from '@/assets/images/work_le.jpg';
 import { useMediaQuery } from 'react-responsive';
+import Link from 'next/link';
 const WorkSection = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
 
@@ -36,9 +37,11 @@ const WorkSection = () => {
         type="React Native"
         projectName="LebEssentials"
       />
-      <Text textAlign="center" isLink type="h6" color="#06FFF0">
-        More
-      </Text>
+      <Link href="/works">
+        <Text textAlign="center" isLink type="h6" color="#06FFF0">
+          More
+        </Text>
+      </Link>
     </Container>
   );
 };
